@@ -22,13 +22,23 @@ class MainActivity : AppCompatActivity() {
             // собираем данные полей ввода
             val login = userLogin.text.toString().trim()
             val email = userEmail.text.toString().trim()
-            val pass = userPassword.text.toString().trim()
+            val password = userPassword.text.toString().trim()
 
-            if (login == "" || email == "" || pass == "")
+            if (login == "" || email == "" || password == "")
                 // всплывающее уведомление
                 Toast.makeText(this, "Не все поля заполнены", Toast.LENGTH_LONG).show()
             else {
-                println(pass)
+                val user = User(login, email, password)  // экземпляр класса для передачи его в БД
+                val db = DbHelper(this, null)
+                db.addUser(user)  // запись введенных данных в БД
+
+                Toast.makeText(this,
+                    "Пользователь $login добавлен",
+                    Toast.LENGTH_LONG).show()
+
+                userLogin.text.clear()
+                userEmail.text.clear()
+                userPassword.text.clear()
             }
 
         }
