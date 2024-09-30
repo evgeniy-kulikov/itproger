@@ -5,81 +5,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D88100"
     android:orientation="vertical"
-    android:background="#130B20"
-    tools:context=".MainActivity">
+    tools:context=".AuthActivity">
 
     <TextView
-        android:id="@+id/tvTitle"
+        android:id="@+id/tvTitleAuth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/inter_bold"
-        android:textColor="#fdfdfd"
-        android:textSize="25sp"
-        android:textStyle="bold"
         android:layout_gravity="center"
         android:layout_marginTop="150dp"
-        android:text="Зарегистрироваться" />
+        android:fontFamily="@font/inter_bold"
+        android:text="Вход в аккаунт"
+        android:textColor="#fdfdfd"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/etxtLogin"
+        android:id="@+id/etxtLoginAuth"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
         android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:autofillHints="Login"
         android:ems="10"
+        android:hint="Введите логин"
         android:inputType="text"
         android:textColor="#fdfdfd"
-        android:textColorHint="#78909C"
-        android:hint="Введите логин"
-        android:autofillHints="Login" />
+        android:textColorHint="#78909C" />
+
 
     <EditText
-        android:id="@+id/etxtEmail"
+        android:id="@+id/etxtPasswordAuth"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:textColor="#fdfdfd"
-        android:textColorHint="#78909C"
-        android:hint="Введите email"
-        android:autofillHints="Email" />
-
-    <EditText
-        android:id="@+id/etxtPassword"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
         android:layout_marginTop="20dp"
-        android:layout_gravity="center"
+        android:autofillHints="Password"
         android:ems="10"
+        android:hint="Введите пароль"
         android:inputType="textPassword"
         android:textColor="#fdfdfd"
-        android:textColorHint="#78909C"
-        android:hint="Введите пароль"
-        android:autofillHints="Password" />
+        android:textColorHint="#78909C" />
 
     <Button
-        android:id="@+id/btnRegistration"
+        android:id="@+id/btnAuth"
         android:layout_width="250dp"
-        android:layout_gravity="center"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginTop="40dp"
-        android:text="Регистрация"
+        android:backgroundTint="#130B20"
+        android:text="Войти"
+        android:textColor="#FFF"
         android:textSize="18sp"
-        android:textColor="#000000"
-        android:backgroundTint="#D88100"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/tvAuthLink"
+        android:id="@+id/tvRegLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="120dp"
         android:fontFamily="@font/inter"
-        android:text="Авторизоваться"
+        android:text="Зарегистрироваться"
         android:textColor="#fdfdfd"
         android:textSize="18sp" />
 
