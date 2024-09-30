@@ -1,5 +1,6 @@
 package ru.eugenypets.itprogerapp
 
+import android.annotation.SuppressLint
 import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
@@ -38,8 +39,16 @@ class DbHelper(
         val db = this.writableDatabase
         db.insert("users", null, values)
         db.close()
-
     }
 
+    // Вход пользователя пользователя в систему. Получение данных из БД
+//    @SuppressLint("Recycle")
+    fun getUser(login: String, password: String): Boolean {
+        val db = this.readableDatabase
+
+        val result = db.rawQuery("SELECT * FROM users WHERE login = '$login' AND password = '$password'", null)
+        // Получение первой записи из выборки. Если существует -> true
+        return result.moveToFirst()
+    }
 
 }

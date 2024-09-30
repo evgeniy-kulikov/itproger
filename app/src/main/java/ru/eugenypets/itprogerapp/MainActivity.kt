@@ -20,7 +20,9 @@ class MainActivity : AppCompatActivity() {
         val btnSubmit: Button = findViewById(R.id.btnRegistration)
         val linkToAuth: TextView = findViewById(R.id.tvAuthLink)
 
-        // слушатели событий элементов
+        // Слушатели событий
+
+        // Кнопка
         btnSubmit.setOnClickListener {
             // собираем данные полей ввода
             val login = userLogin.text.toString().trim()
@@ -47,7 +49,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        // переход на AuthActivity
+        // Переход на AuthActivity
         linkToAuth.setOnClickListener {
             val intent = Intent(this, AuthActivity::class.java)
             startActivity(intent)
