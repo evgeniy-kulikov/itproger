@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -16,8 +15,8 @@
         android:layout_gravity="center"
         android:layout_marginTop="150dp"
         android:fontFamily="@font/inter_bold"
-        android:text="Вход в аккаунт"
-        android:textColor="#fdfdfd"
+        android:text="@string/tv_Auth_Title"
+        android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold" />
 
@@ -29,10 +28,10 @@
         android:layout_marginTop="20dp"
         android:autofillHints="Login"
         android:ems="10"
-        android:hint="Введите логин"
+        android:hint="@string/etxt_Auth_Login"
         android:inputType="text"
-        android:textColor="#fdfdfd"
-        android:textColorHint="#78909C" />
+        android:textColor="@color/white"
+        android:textColorHint="@color/fontHintAuth" />
 
 
     <EditText
@@ -43,10 +42,10 @@
         android:layout_marginTop="20dp"
         android:autofillHints="Password"
         android:ems="10"
-        android:hint="Введите пароль"
+        android:hint="@string/etxt_Auth_Pass"
         android:inputType="textPassword"
-        android:textColor="#fdfdfd"
-        android:textColorHint="#78909C" />
+        android:textColor="@color/white"
+        android:textColorHint="@color/fontHintAuth" />
 
     <Button
         android:id="@+id/btnAuth"
@@ -54,9 +53,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
-        android:backgroundTint="#130B20"
-        android:text="Войти"
-        android:textColor="#FFF"
+        android:backgroundTint="#352B1E"
+        android:text="@string/btn_Auth_Enter"
+        android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -67,8 +66,8 @@
         android:layout_gravity="center"
         android:layout_marginTop="120dp"
         android:fontFamily="@font/inter"
-        android:text="Зарегистрироваться"
-        android:textColor="#fdfdfd"
+        android:text="@string/tv_Auth_RegLink"
+        android:textColor="@color/white"
         android:textSize="18sp" />
 
 </LinearLayout>

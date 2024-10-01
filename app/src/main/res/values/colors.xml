@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="itemsFon">#FFDBA5</color>
+    <color name="itemsCard">#DF9831</color>
+    <color name="mainFon">#130B20</color>
+    <color name="fontHintReg">#78909C</color>
+    <color name="fontHintAuth">#FFE69B</color>
+    <color name="btnFonReg">#D88100</color>
 </resources>

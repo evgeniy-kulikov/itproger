@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/itemsCard"
+    android:paddingBottom="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivItemListImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/tvItemListTitle"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvItemListDescript"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tvItemListPrice"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnItemListButton"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/btnFonReg"
+        android:text="@string/btn_item_button" />
+</LinearLayout>

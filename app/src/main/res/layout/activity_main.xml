@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#130B20"
+    android:background="@color/mainFon"
     tools:context=".MainActivity">
 
     <TextView
@@ -14,12 +13,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/inter_bold"
-        android:textColor="#fdfdfd"
+        android:textColor="@color/white"
         android:textSize="25sp"
         android:textStyle="bold"
         android:layout_gravity="center"
         android:layout_marginTop="150dp"
-        android:text="Зарегистрироваться" />
+        android:text="@string/tv_Main_Title" />
 
     <EditText
         android:id="@+id/etxtLogin"
@@ -29,9 +28,9 @@
         android:layout_gravity="center"
         android:ems="10"
         android:inputType="text"
-        android:textColor="#fdfdfd"
-        android:textColorHint="#78909C"
-        android:hint="Введите логин"
+        android:textColor="@color/white"
+        android:textColorHint="@color/fontHintReg"
+        android:hint="@string/etxt_Main_Login"
         android:autofillHints="Login" />
 
     <EditText
@@ -42,9 +41,9 @@
         android:layout_gravity="center"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:textColor="#fdfdfd"
-        android:textColorHint="#78909C"
-        android:hint="Введите email"
+        android:textColor="@color/white"
+        android:textColorHint="@color/fontHintReg"
+        android:hint="@string/etxt_Main_Email"
         android:autofillHints="Email" />
 
     <EditText
@@ -55,9 +54,9 @@
         android:layout_gravity="center"
         android:ems="10"
         android:inputType="textPassword"
-        android:textColor="#fdfdfd"
-        android:textColorHint="#78909C"
-        android:hint="Введите пароль"
+        android:textColor="@color/white"
+        android:textColorHint="@color/fontHintReg"
+        android:hint="@string/etxt_Main_Pass"
         android:autofillHints="Password" />
 
     <Button
@@ -66,10 +65,10 @@
         android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="Регистрация"
+        android:text="@string/btn_Main_Registration"
         android:textSize="18sp"
-        android:textColor="#000000"
-        android:backgroundTint="#D88100"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/btnFonReg"
         android:textStyle="bold" />
 
     <TextView
@@ -79,8 +78,8 @@
         android:layout_gravity="center"
         android:layout_marginTop="120dp"
         android:fontFamily="@font/inter"
-        android:text="Авторизоваться"
-        android:textColor="#fdfdfd"
+        android:text="@string/tv_Main_ToAuthLink"
+        android:textColor="@color/white"
         android:textSize="18sp" />
 
 </LinearLayout>

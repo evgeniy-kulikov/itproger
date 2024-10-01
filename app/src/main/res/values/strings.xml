@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">itProgerApp</string>
+    <string name="tv_Auth_Title">Вход в аккаунт</string>
+    <string name="etxt_Auth_Login">Введите логин</string>
+    <string name="etxt_Auth_Pass">Введите пароль</string>
+    <string name="btn_Auth_Enter">Войти</string>
+    <string name="tv_Auth_RegLink">Зарегистрироваться</string>
+    <string name="tv_Main_Title">Зарегистрироваться</string>
+    <string name="etxt_Main_Login">Введите логин</string>
+    <string name="etxt_Main_Email">Введите email</string>
+    <string name="tv_Main_ToAuthLink">Авторизоваться</string>
+    <string name="btn_Main_Registration">Регистрация</string>
+    <string name="etxt_Main_Pass">Введите пароль</string>
+    <string name="tv_Items_Title">Товары</string>
+    <string name="btn_item_button">Посмотреть</string>
 </resources>

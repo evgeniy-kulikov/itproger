@@ -43,6 +43,11 @@ class AuthActivity : AppCompatActivity() {
                     ).show()
                     userLogin.text.clear()
                     userPassword.text.clear()
+
+                    // Переход на ItemsActivity
+                    val Intent = Intent(this, ItemsActivity::class.java)
+                    startActivity(Intent)
+
                 } else {
                     Toast.makeText(
                         this,
