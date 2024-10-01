@@ -2,6 +2,7 @@ package ru.eugenypets.itprogerapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class ItemsActivity : AppCompatActivity() {
@@ -9,7 +10,7 @@ class ItemsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_items)
 
-        // элемент RecyclerView rvItemsList
+        // элемент RecyclerView rvItemsList с карточками
         val itemsList: RecyclerView = findViewById(R.id.rvItemsList)
 
         // создание элементов (карточки товаров) Пустой массив
@@ -20,5 +21,8 @@ class ItemsActivity : AppCompatActivity() {
         items.add(ItemGoods(3, "kitchen", "Кухня", "Ipsum dolor sit amet, consectetur adipiscing elit.", "Proin ornare tortor scelerisque ultricies imperdiet. Cras ac tristique nulla, quis.", 434700))
 
 
+        // Стиль отображения и наполнение карточек
+        itemsList.layoutManager = LinearLayoutManager(this)
+        itemsList.adapter = ItemsAdapter(items, this)
     }
 }
